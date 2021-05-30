@@ -11,13 +11,13 @@ import hashlib
 import hmac
 import sys
 
-USERNAME = 'admin'
-SALT = 'zOa0kWA/OTak0a0vNaN0Zh2drO1uekoDUh4sdg=='
-CLIENT_NONCE = '+CDTb3v9SwhwxAXb4+vZ32l0VsTvrLeK'
-SERVER_NONCE = '+CDTb3v9SwhwxAXb4+vZ32l0VsTvrLeKoGtDP4x0LH5WZgQ9xFMJEJknBHTp6N1D'
+USERNAME = '<username>'
+SALT = '<salt>'
+CLIENT_NONCE = '<client_nonce>'
+SERVER_NONCE = '<server_nonce>'
 ITERATIONS = 15000
-TARGET = '/nW1YVs0JcvxU48jLHanbkQbZ4GFJ8+Na8fj7xM1s98='
-WORDLIST = '/usr/share/wordlists/rockyou.txt'
+TARGET = '<target>'
+WORDLIST = '<wordlist>'
 
 def byte_xor(ba1, ba2):
     return bytes([_a ^ _b for _a, _b in zip(ba1, ba2)])
