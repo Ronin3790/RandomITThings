@@ -241,7 +241,7 @@ sudo chage -d 0 [UserName]
 #Enabling a FIPS mode on a pre-existing system involves a number of modifications to the Ubuntu operating system. Refer to the Ubuntu Server 18.04 FIPS 140-2 security policy document for instructions. 
 #A subscription to the "Ubuntu Advantage" plan is required in order to obtain the FIPS Kernel cryptographic modules and enable FIPS.
 
-sudo sed -iE 's/^([^!#]+)/!\1/' /etc/ca-certificates.conf
+sudo sed -i 's/^([^!#]+)/!\1/' /etc/ca-certificates.conf
 
 #Add at least one DoD certificate authority to the "/usr/local/share/ca-certificates" directory in the PEM format. 
 #Update the "/etc/ssl/certs" directory with the following command: 
